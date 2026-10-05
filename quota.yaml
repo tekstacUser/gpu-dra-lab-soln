@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: gpu-lab-quota
+  namespace: gpu-lab
+spec:
+  hard:
+    pods: "4"
+    gpu.example.com.deviceclass.resource.k8s.io/devices: "4"
